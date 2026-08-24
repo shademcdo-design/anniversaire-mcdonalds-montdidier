@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080704">
+  <title>20 ans — McDonald's Montdidier</title>
+  <style>
+    :root{--black:#080704;--panel:#151109;--gold:#d4af37;--light:#f5d97c;--dim:#8b712d;--cream:#fff7df;--muted:#c9ba91;--red:#a91520}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -10%,#30240c 0,transparent 36%),radial-gradient(circle at 100% 80%,#211907 0,transparent 32%),var(--black);color:var(--cream);font-family:Georgia,serif;overflow-x:hidden}
+    button{font:inherit}.page{position:relative;z-index:1;width:min(100% - 28px,720px);margin:auto;padding:34px 0 70px}.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden}.sparkles i{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.32;animation:twinkle 3s ease-in-out infinite alternate}@keyframes twinkle{to{opacity:.8;transform:scale(1.8)}}
+    header{text-align:center}.arches{font:900 44px/1 Arial,sans-serif;color:var(--light);text-shadow:0 0 22px #d4af3760}.hero-number{font:900 clamp(84px,26vw,148px)/.78 Impact,"Arial Black",sans-serif;letter-spacing:-5px;background:linear-gradient(#fff1a9 0,#d7ad34 53%,#775918 100%);background-clip:text;color:transparent;filter:drop-shadow(0 8px 20px #d4af3740)}.years{font:900 clamp(23px,7vw,36px)/1 "Arial Black",sans-serif;letter-spacing:.16em;margin:8px 0 0}.ribbon{display:inline-block;margin:20px 0 15px;padding:10px 38px;color:#241a02;background:linear-gradient(#f8df83,#b98c20);font:italic 800 18px/1.2 Arial,sans-serif;clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%)}h1{font:800 clamp(19px,5vw,25px)/1.2 Arial,sans-serif;text-transform:uppercase;color:var(--light);margin:0}.tagline{color:var(--muted);font-style:italic;margin:5px 0 0}.dates{margin:25px 0 0;color:var(--muted);font:700 12px/1.5 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}.dates strong{display:block;color:var(--light);font-size:17px;letter-spacing:.05em}
+    .promise{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:26px auto 0;max-width:540px}.promise div{padding:12px 6px;border:1px solid #d4af3725;background:#d4af3709;border-radius:12px;color:#aa9a70;font:700 10px/1.3 Arial,sans-serif;text-transform:uppercase}.promise span{display:block;font-size:23px;margin-bottom:5px}
+    .status{margin:30px auto 15px;padding:13px 18px;border:1px solid #d4af3738;border-radius:100px;background:#100d08;color:var(--muted);text-align:center;font:700 11px/1.45 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}.status strong{color:var(--light)}
+    .demo{position:sticky;top:10px;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0 24px;padding:10px 12px;border:1px solid #d4af3748;border-radius:14px;background:#0d0b07ed;box-shadow:0 10px 30px #0009;backdrop-filter:blur(12px)}.demo-label{font:700 11px/1.3 Arial,sans-serif;color:var(--muted)}.demo-label b{display:block;color:var(--light);font-size:12px}.demo-controls{display:flex;gap:7px}.demo button{border:1px solid #d4af3760;border-radius:9px;background:#20190b;color:var(--light);padding:8px 10px;cursor:pointer;font:700 11px Arial,sans-serif}.demo button:hover,.demo button:focus-visible{border-color:var(--light);outline:none}.demo button.active{background:linear-gradient(#ebcb68,#b38721);color:#201703;border-color:transparent}.demo select{border:1px solid #d4af3760;border-radius:9px;background:#20190b;color:var(--light);padding:8px;font:700 11px Arial,sans-serif}
+    main{display:grid;gap:14px}.gift{position:relative;min-height:135px;border:1px solid #d4af3740;border-radius:15px;background:linear-gradient(145deg,#1c170d,#0d0b07);box-shadow:0 10px 32px #0007;overflow:hidden;transition:.25s}.gift.available{border-color:#e6c55d;box-shadow:0 14px 40px #d4af3725}.gift.available:hover{transform:translateY(-3px)}.gift-inner{min-height:135px;padding:20px 94px 20px 24px;display:flex;flex-direction:column;justify-content:center}.date{width:max-content;padding:5px 11px;border-radius:6px;background:linear-gradient(#f5dc82,#c89c2d);color:#241a03;font:800 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.offer{margin:11px 0 0;color:var(--light);font:900 clamp(18px,5vw,24px)/1.08 "Arial Black",Arial,sans-serif;text-transform:uppercase}.detail{margin:6px 0 0;color:var(--muted);font:italic 14px/1.35 Georgia,serif}.price{position:absolute;right:18px;top:50%;translate:0 -50%;width:65px;height:65px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--light);background:#d4af3710;box-shadow:0 0 20px #d4af3730;text-align:center;font:900 13px/1.05 Arial,sans-serif}.gift-cover{position:absolute;inset:0;border:0;background:linear-gradient(120deg,#17130cfa,#090805f7);color:var(--cream);display:flex;align-items:center;justify-content:center;gap:15px;padding:18px;cursor:default}.gift-cover .icon{font-size:35px}.gift-cover strong{display:block;color:var(--light);font:800 14px Arial,sans-serif}.gift-cover small{display:block;margin-top:4px;color:var(--muted);font:12px Arial,sans-serif}.available .gift-cover{cursor:pointer}.available .gift-cover:hover .icon{animation:bounce .65s infinite alternate}@keyframes bounce{to{transform:translateY(-7px) rotate(5deg)}}.opened .gift-cover{animation:unwrap .65s cubic-bezier(.2,.8,.2,1) forwards;pointer-events:none}@keyframes unwrap{45%{transform:scale(1.04);filter:brightness(1.5)}100%{transform:translateY(-110%) rotate(-2deg)}}.expired{opacity:.48;filter:grayscale(.7)}.expired .gift-cover{background:#080704c9}.locked{opacity:.68}.gift:focus-within{outline:2px solid var(--light);outline-offset:3px}
+    .burst{position:fixed;inset:0;z-index:30;pointer-events:none}.burst i{position:absolute;left:50%;top:50%;width:8px;height:12px;background:var(--gold);animation:burst 1.2s ease-out forwards;transform:rotate(var(--r)) translateY(0)}@keyframes burst{to{transform:rotate(var(--r)) translateY(-45vh) rotate(400deg);opacity:0}}
+    footer{text-align:center;margin-top:38px;color:#8d8160;font:11px/1.65 Arial,sans-serif}.divider{width:70px;height:1px;margin:0 auto 17px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    @media(max-width:520px){.page{width:min(100% - 20px,720px);padding-top:23px}.promise{gap:5px}.promise div{font-size:8px}.demo{align-items:flex-start}.demo-controls{flex-direction:column}.demo button,.demo select{width:142px}.gift-inner{padding:18px 78px 18px 18px}.price{right:12px;width:57px;height:57px;font-size:11px}.gift-cover{justify-content:flex-start}.offer{font-size:18px}.detail{font-size:13px}}
+    @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="page">
+    <header>
+      <div class="arches" aria-hidden="true">M</div><div class="hero-number">20</div><div class="years">ANS</div>
+      <div class="ribbon">ça se fête !</div>
+      <h1>McDonald's<sup>®</sup> Montdidier</h1><p class="tagline">fête ses 20 ans avec vous !</p>
+      <p class="dates">9 jours de surprises<strong>Du 3 au 11 octobre 2026</strong></p>
+      <div class="promise"><div><span>🎁</span>Une offre par jour</div><div><span>🎡</span>Roue de la chance</div><div><span>🎉</span>Animations & cadeaux</div></div>
+    </header>
+    <div class="status" id="status" aria-live="polite"></div>
+    <section class="demo" aria-label="Mode de démonstration">
+      <div class="demo-label"><b>Mode aperçu</b>Pour présenter le concept</div>
+      <div class="demo-controls"><select id="demoDay" aria-label="Choisir le jour de démonstration"></select><button id="demoToggle" type="button">Activer</button></div>
+    </section>
+    <main id="calendar"></main>
+    <footer><div class="divider"></div><p>Une offre différente chaque jour, valable uniquement à la date indiquée au McDonald's de Montdidier, selon les modalités présentées en restaurant et dans la limite des stocks disponibles.<br>Prototype de présentation — conditions définitives à confirmer.</p></footer>
+  </div>
+  <script>
+    const OFFERS=[
+      {day:3,name:'Sundae',detail:"offert pour l’achat d’un menu Best Of™",price:'OFFERT'},
+      {day:4,name:'6 Chicken McNuggets®',detail:'à 3 €',price:'3 €'},
+      {day:5,name:'Un goodie',detail:"offert dès 25 € d’achat",price:'OFFERT'},
+      {day:6,name:'Cheeseburger',detail:"offert pour l’achat d’un menu Maxi Best Of™",price:'OFFERT'},
+      {day:7,name:'McChicken®',detail:'à 3 €',price:'3 €'},
+      {day:8,name:'McFlurry®',detail:'à 3 €',price:'3 €'},
+      {day:9,name:'6 Chicken McNuggets®',detail:'à 3 €',price:'3 €'},
+      {day:10,name:'Big Mac®',detail:'à 3 €',price:'3 €'},
+      {day:11,name:'Happy Meal™ + Maxi Best Of™',detail:'Big Mac® ou gamme Royal™ — hors suppléments',price:'14 €'}
+    ];
+    const YEAR=2026,MONTH=9,calendar=document.querySelector('#calendar'),status=document.querySelector('#status'),toggle=document.querySelector('#demoToggle'),daySelect=document.querySelector('#demoDay');
+    let demo=false,demoDay=7,opened=new Set();
+    daySelect.innerHTML=OFFERS.map(o=>`<option value="${o.day}" ${o.day===demoDay?'selected':''}>${o.day} octobre</option>`).join('');
+    function context(){const now=new Date();if(demo)return{phase:'during',day:demoDay};if(now<new Date(YEAR,MONTH,3))return{phase:'before'};if(now>new Date(YEAR,MONTH,11,23,59,59))return{phase:'after'};return{phase:'during',day:now.getDate()}}
+    function stateFor(day,c){if(c.phase==='before')return'locked';if(c.phase==='after')return'expired';if(day<c.day)return'expired';if(day>c.day)return'locked';return'available'}
+    function coverText(state,day){if(state==='available')return `<span class="icon">🎁</span><span><strong>Ouvrir mon cadeau</strong><small>Découvrez l’offre du jour</small></span>`;if(state==='expired')return `<span class="icon">✓</span><span><strong>Offre terminée</strong><small>Rendez-vous pour une nouvelle surprise</small></span>`;return `<span class="icon">🔒</span><span><strong>Encore un peu de patience…</strong><small>Revenez le ${day} octobre</small></span>`}
+    function render(){const c=context();calendar.innerHTML=OFFERS.map(o=>{const state=stateFor(o.day,c),isOpen=opened.has(o.day)&&state==='available';return `<article class="gift ${state} ${isOpen?'opened':''}" data-day="${o.day}"><div class="gift-inner"><span class="date">${o.day} octobre</span><h2 class="offer">${o.name}</h2><p class="detail">${o.detail}</p><div class="price">${o.price}</div></div><button class="gift-cover" type="button" ${state!=='available'?'disabled':''} aria-label="${state==='available'?'Ouvrir le cadeau du '+o.day+' octobre':state==='locked'?'Cadeau verrouillé':'Offre terminée'}">${coverText(state,o.day)}</button></article>`}).join('');
+      if(demo)status.innerHTML=`<strong>Démo du ${demoDay} octobre</strong> — cliquez sur le cadeau du jour`;else if(c.phase==='before')status.innerHTML=`Les cadeaux seront disponibles dès le <strong>3 octobre 2026</strong>`;else if(c.phase==='after')status.innerHTML=`La fête est terminée — <strong>merci d’avoir célébré avec nous !</strong>`;else status.innerHTML=`Aujourd’hui : ouvrez votre cadeau du <strong>${c.day} octobre</strong>`;
+    }
+    function celebrate(){const burst=document.createElement('div');burst.className='burst';for(let i=0;i<34;i++){const p=document.createElement('i');p.style.setProperty('--r',`${i*10.6}deg`);p.style.background=i%3?'#d4af37':'#fff0a0';burst.append(p)}document.body.append(burst);setTimeout(()=>burst.remove(),1400)}
+    calendar.addEventListener('click',e=>{const btn=e.target.closest('.gift-cover');if(!btn||btn.disabled)return;const card=btn.closest('.gift'),day=Number(card.dataset.day);opened.add(day);card.classList.add('opened');celebrate();setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'center'}),250)});
+    toggle.addEventListener('click',()=>{demo=!demo;opened.clear();toggle.textContent=demo?'Désactiver':'Activer';toggle.classList.toggle('active',demo);daySelect.disabled=!demo;render()});
+    daySelect.addEventListener('change',()=>{demoDay=Number(daySelect.value);opened.clear();render()});daySelect.disabled=true;
+    for(let i=0;i<32;i++){const s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';document.querySelector('#sparkles').append(s)}render();
+  </script>
+</body>
+</html>
